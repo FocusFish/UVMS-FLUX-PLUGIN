@@ -7,7 +7,7 @@
     <packaging>ear</packaging>
 
     <parent>
-        <groupId>eu.europa.ec.fisheries.uvms.plugins</groupId>
+        <groupId>fish.focus.uvms.plugins</groupId>
         <artifactId>flux-movement-plugin</artifactId>
         <version>3.1.12-SNAPSHOT</version>
     </parent>

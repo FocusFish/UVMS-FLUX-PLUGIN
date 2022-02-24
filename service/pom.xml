@@ -7,7 +7,7 @@
     <packaging>ejb</packaging>
 
     <parent>
-        <groupId>eu.europa.ec.fisheries.uvms.plugins</groupId>
+        <groupId>fish.focus.uvms.plugins</groupId>
         <artifactId>flux-movement-plugin</artifactId>
         <version>3.1.12-SNAPSHOT</version>
     </parent>
@@ -26,7 +26,7 @@
 			<scope>provided</scope>
 		</dependency>    	
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.exchange</groupId>
+            <groupId>fish.focus.uvms.exchange</groupId>
             <artifactId>exchange-model</artifactId>
             <version>${exchange.model.version}</version>
         </dependency>
@@ -36,7 +36,7 @@
             <version>${flux.movement.client.version}</version>
         </dependency>
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.commons</groupId>
+            <groupId>fish.focus.uvms.commons</groupId>
             <artifactId>uvms-commons-message</artifactId>
             <version>${uvms.common.version}</version>
         </dependency>
@@ -51,12 +51,6 @@
             <artifactId>bridge-connector-client</artifactId>
             <version>${bridge-connector.client.version}</version>
         </dependency>
-        <dependency>
-			<groupId>fish.focus.uvms.maven</groupId>
-			<artifactId>uvms-pom-test-deps</artifactId>
-			<type>pom</type>
-			<scope>test</scope>
-		</dependency>
         <dependency>
             <groupId>com.sun.xml.bind</groupId>
             <artifactId>jaxb-impl</artifactId>
