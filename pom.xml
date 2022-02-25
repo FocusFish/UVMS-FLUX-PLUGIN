@@ -17,9 +17,6 @@
     <properties>
         <uvms.common.version>4.1.12</uvms.common.version>
         <exchange.model.version>5.3.23</exchange.model.version>
-        <connector-bridge.client.version>2.0.1</connector-bridge.client.version>
-        <bridge-connector.client.version>2.0.1</bridge-connector.client.version>
-        <flux.movement.client.version>2.0.1</flux.movement.client.version>
     </properties>
 
     <dependencies>
@@ -54,6 +51,7 @@
     </scm>
 
     <modules>
+        <module>model</module>
         <module>service</module>
         <module>module</module>
     </modules>

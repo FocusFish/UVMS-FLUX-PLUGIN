@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Simplified schema FLUXVesselPositionMessage_4p0.xsd -->
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:un:unece:uncefact:data:standard:FLUXVesselPositionMessage:4" version="4.0" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:18" xmlns:rsm="urn:un:unece:uncefact:data:standard:FLUXVesselPositionMessage:4" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:18" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:import namespace="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:18" schemaLocation="UnqualifiedDataType_18p0.xsd" />
+    <xsd:import namespace="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:18" schemaLocation="ReusableAggregateBusinessInformationEntity_18p0.xsd" />
+  
+    <xsd:element name="FLUXVesselPositionMessage" type="rsm:FLUXVesselPositionMessageType" />
+    <xsd:complexType name="FLUXVesselPositionMessageType">
+        <xsd:sequence>
+            <xsd:element maxOccurs="1" minOccurs="1" name="FLUXReportDocument" type="ram:FLUXReportDocumentType" />
+            <xsd:element maxOccurs="1" minOccurs="1" name="VesselTransportMeans" type="ram:VesselTransportMeansType" />
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
