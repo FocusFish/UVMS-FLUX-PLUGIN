@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-
     <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>fish.focus.uvms.plugins.flux.movement</groupId>
+        <artifactId>flux-movement-plugin</artifactId>
+        <version>3.1.12</version>
+    </parent>
+
     <artifactId>${project.parent.artifactId}-service</artifactId>
     <name>${project.parent.artifactId}-service</name>
     <packaging>ejb</packaging>
-
-    <parent>
-        <groupId>eu.europa.ec.fisheries.uvms.plugins</groupId>
-        <artifactId>flux-movement-plugin</artifactId>
-        <version>3.1.12-SNAPSHOT</version>
-    </parent>
 
     <properties>
         <application.name>${project.parent.artifactId}</application.name> 
@@ -26,37 +26,20 @@
 			<scope>provided</scope>
 		</dependency>    	
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.exchange</groupId>
+            <groupId>fish.focus.uvms.exchange</groupId>
             <artifactId>exchange-model</artifactId>
             <version>${exchange.model.version}</version>
         </dependency>
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.service.client.flux</groupId>
-            <artifactId>flux-movement</artifactId>
-            <version>${flux.movement.client.version}</version>
+            <groupId>fish.focus.uvms.plugins.flux.movement</groupId>
+            <artifactId>flux-movement-plugin-model</artifactId>
+            <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.commons</groupId>
+            <groupId>fish.focus.uvms.commons</groupId>
             <artifactId>uvms-commons-message</artifactId>
             <version>${uvms.common.version}</version>
         </dependency>
-        <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.service.client</groupId>
-            <artifactId>connector-bridge-client</artifactId>
-            <version>${connector-bridge.client.version}</version>
-        </dependency>
-        <!-- incoming messages from FLUX -->
-        <dependency>
-            <groupId>eu.europa.ec.fisheries.uvms.service.client</groupId>
-            <artifactId>bridge-connector-client</artifactId>
-            <version>${bridge-connector.client.version}</version>
-        </dependency>
-        <dependency>
-			<groupId>fish.focus.uvms.maven</groupId>
-			<artifactId>uvms-pom-test-deps</artifactId>
-			<type>pom</type>
-			<scope>test</scope>
-		</dependency>
         <dependency>
             <groupId>com.sun.xml.bind</groupId>
             <artifactId>jaxb-impl</artifactId>
