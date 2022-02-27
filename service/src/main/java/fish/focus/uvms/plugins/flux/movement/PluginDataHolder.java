@@ -30,7 +30,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 public abstract class PluginDataHolder {
 
-    public final static String PLUGIN_PROPERTIES = "flux.properties";
+    public final static String PLUGIN_PROPERTIES = "plugin.properties";
     public final static String PROPERTIES = "settings.properties";
     public final static String CAPABILITIES = "capabilities.properties";
 
